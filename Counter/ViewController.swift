@@ -49,20 +49,16 @@ final class ViewController: UIViewController {
         clearButton.visible(title: "clear", bacground: .systemGray, image: "clear")
     }
     
-    @IBAction func reduceCounter(_ sender: Any) {
+    @IBAction private func reduceCounter(_ sender: Any) {
         count(.minus)
     }
     
-    @IBAction func increaseCounter(_ sender: Any) {
+    @IBAction private func increaseCounter(_ sender: Any) {
         count(.plus)
     }
     
-    @IBAction func clearButton(_ sender: Any) {
+    @IBAction private func clearButton(_ sender: Any) {
         count(.clear)
-    }
-    
-    private func addText() {
-        
     }
     
     private func count(_ type: ButtonsType){
